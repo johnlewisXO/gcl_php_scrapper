@@ -1,0 +1,23 @@
+------Project overview - by John-Paul Lewis--------------
+
+The code uses several technologies, libraries, and dependencies to scrape data from a web page using PHP. Here's an overview of the key components:
+
+Composer: Composer is a dependency manager for PHP that simplifies the process of adding and managing external libraries in your PHP projects. The code includes a line that requires the Composer autoload file (require 'vendor/autoload.php') to load the necessary dependencies.
+
+Guzzle HTTP Client: Guzzle is a widely used PHP library for making HTTP requests. In the code, it's utilized to send a GET request to a specified URL and retrieve the HTML content of the web page. The relevant class from the Guzzle library is imported using use GuzzleHttp\Client.
+
+Regular Expressions (Regex): The code uses regular expressions to clean and process text data extracted from the web page. These regex patterns help remove unwanted characters, extra spaces, and other formatting issues to prepare the data for storage in a database.
+
+DOMDocument and DOMXPath: The DOMDocument and DOMXPath are part of PHP's Document Object Model (DOM) extension, allowing you to work with XML and HTML documents in a structured way. The code creates a DOMDocument instance to load and parse the HTML content from the web page. DOMXPath is used to navigate and query the DOM structure, enabling the extraction of specific elements based on XPath queries.
+
+MySQLi Database: The code establishes a connection to a MySQL database using the MySQLi (MySQL Improved) extension. It uses the mysqli class to interact with the database and insert scraped data into tables.
+
+SQL Statements: Prepared SQL statements are used to insert data into the database tables. These statements help prevent SQL injection and improve the security of the database operations.
+
+Error Handling: The code includes error handling to capture and handle exceptions, such as client creation errors, request errors, or database connection errors. This ensures graceful handling of potential issues during data scraping and storage.
+
+Success Messages: After inserting data into the database, the code stores success messages in an array and displays them if data insertion is successful. This allows you to monitor the progress of the scraping process.
+
+Data Arrays: Arrays ($dataArticles, $dataCitations, and $dataMedias) are used to store scraped data before insertion into the database.
+
+Overall, the code combines PHP with external libraries and standard PHP extensions to scrape, clean, and store data from a web page into a MySQL database. It handles HTTP requests, HTML parsing, text cleaning, and database operations in a structured and error-handled manner.
