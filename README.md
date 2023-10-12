@@ -1,6 +1,6 @@
 # Web Scraping with PHP README
 
-This PHP script is designed to scrape data from a web page and store it in a MySQL database. The code uses various libraries and technologies to facilitate the scraping process and ensure data integrity.
+This PHP project is designed to scrape data from a web page and store it in a MySQL database. The code uses various libraries and technologies to facilitate the scraping process and ensure data integrity.
 
 ## Table of Contents
 
