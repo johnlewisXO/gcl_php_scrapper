@@ -90,4 +90,3 @@ The script uses the following technologies, libraries, and dependencies:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-**Note:** Be sure to review and adhere to the terms of service and usage policies of the website you are scraping. Unauthorized or excessive web scraping may violate the website's terms of use and can lead to legal issues.
