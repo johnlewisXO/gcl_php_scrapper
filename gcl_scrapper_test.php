@@ -95,7 +95,7 @@ function scrapeGLC($url) {
         ];
     }
 
-    // Iterare Extract data for Media // Iterate over HTML media elements, represented by the $medias DOMNodeList. We are going through each media element in the DOM.
+    // Extract data for Media // Iterate over HTML media elements, represented by the $medias DOMNodeList. We are going through each media element in the DOM.
     foreach ($medias as $media) {
         $src = $media->getAttribute('src'); // Get the source attribute of the media element.
         $alt = $media->getAttribute('alt'); // Get the alt attribute of the media element.
